@@ -33,10 +33,12 @@ fn render() -> Result<(), MyError> {
             .build()
     ).draw(&mut disp)?;
 
-    Image::new(
-        &Bmp::from_slice(include_bytes!("../assets/ferris.bmp"))?,
+    let bmp = Bmp::from_slice(include_bytes!("../assets/ferris.bmp"))?;
+    let ferris = Image::new(
+        &bmp,
         Point::zero()
-    ).draw(&mut disp)?;
+    );
+    Image::draw(&ferris, &mut disp)?;
 
     Triangle::new(
         Point::new(8, 66 + 16),
