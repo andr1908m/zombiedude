@@ -1,0 +1,3 @@
+cargo:rustc-link-search=/home/andres/projects/learning-rust/hello-psp/target/mipsel-sony-psp/debug/build/cortex-m-rt-e9d848c54c9b291e/out
+cargo:rerun-if-changed=build.rs
+cargo:rerun-if-changed=link.x.in
