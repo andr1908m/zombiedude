@@ -1,5 +1,0 @@
-cargo:rerun-if-changed=build.rs
-cargo:rerun-if-changed=libunwind.a
-cargo:rerun-if-env-changed=RUSTFLAGS
-cargo:rustc-link-lib=static=unwind
-cargo:rustc-link-search=native=/home/andres/projects/learning-rust/hello-psp/target/debug/build/psp-8ec69c170f7a5d65/out
