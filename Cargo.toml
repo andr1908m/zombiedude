@@ -2,7 +2,7 @@
 resolver = "2"
 
 members = [
-  "hello_psp",
-  "hello",
+  "game_psp",
+  "game",
 ]
 
