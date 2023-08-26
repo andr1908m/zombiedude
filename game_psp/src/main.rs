@@ -27,23 +27,35 @@ fn list() -> *mut c_void {
 }
 
 fn psp_main() {
-  psp::enable_home_button();
+  let _s = System::new();
 
   initialize_graphics();
   let mut running = true;
   while running {
-    start_frame();
-
+    let frame = Frame::new();
+    
     unsafe {
-      sys::sceGuClearColor(rgba(0x00, 0xFF, 0x00, 0xFF));
-      sys::sceGuClear(ClearBuffer::COLOR_BUFFER_BIT | ClearBuffer::DEPTH_BUFFER_BIT);
+      let color = create_color(0x00, 0xFF, 0x00, 0xFF);
+      clear_color(color);
     }
 
-    end_frame();
   }
   terminate_graphics();
+}
 
-  exit();
+
+
+fn create_color(r: u8, g: u8, b: u8, a: u8) -> u32 {
+  rgba(r,g,b,a)
+}
+
+
+
+fn clear_color(color: u32) {
+    unsafe { 
+      sys::sceGuClearColor(color);
+      sys::sceGuClear(ClearBuffer::COLOR_BUFFER_BIT | ClearBuffer::DEPTH_BUFFER_BIT);
+    };
 }
 
 fn initialize_graphics() {
@@ -68,17 +80,24 @@ fn terminate_graphics() {
   unsafe { sys::sceGuTerm() };
 }
 
-fn start_frame() {
-  unsafe { sys::sceGuStart(GuContextType::Direct, list()) };
+struct Frame {}
+
+impl Frame {
+  fn new() -> Self {
+    unsafe { sys::sceGuStart(GuContextType::Direct, list()) };
+    Self {}
+  }
 }
 
-fn end_frame() {
-  unsafe { 
-    sys::sceGuFinish();
-    sys::sceGuSync(GuSyncMode::Finish, GuSyncBehavior::Wait);
-    sys::sceDisplayWaitVblankStart();
-    sys::sceGuSwapBuffers();
-  };
+impl Drop for Frame {
+  fn drop(&mut self) {
+    unsafe { 
+      sys::sceGuFinish();
+      sys::sceGuSync(GuSyncMode::Finish, GuSyncBehavior::Wait);
+      sys::sceDisplayWaitVblankStart();
+      sys::sceGuSwapBuffers();
+    };
+  }
 }
 
 fn enable_display() {
@@ -173,7 +192,28 @@ fn enable_smooth_shading() {
   }
 }
 
-fn exit() {
+struct System {}
+
+impl System {
+  fn new() -> Self {
+    psp::enable_home_button();
+    Self {}
+  }
+}
+
+impl Drop for System {
+  fn drop(&mut self) {
+    unsafe {
+      sys::sceKernelExitGame();
+    };
+  }
+}
+
+fn initialize_system() {
+  psp::enable_home_button();
+}
+
+fn exit_system() {
   unsafe {
     sys::sceKernelExitGame();
   }
