@@ -6,12 +6,14 @@
     {
       "label": "run",
       "type": "shell",
-      "command": "./run.sh"
+      "command": "./run.sh",
+      "problemMatcher": []
     },
     {
       "label": "build",
       "type": "shell",
-      "command": "cargo psp"
+      "command": "cargo psp",
+      "problemMatcher": []
     }
   ]
 }
