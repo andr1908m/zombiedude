@@ -19,37 +19,43 @@ pub struct Graphics {}
 
 impl Graphics {
   pub fn new() -> Self {
-    initialize_graphics();
+    Self::setup_gu();
+    Self::set_bounds();
+    Self::enable_features();
+    Self::send_to_gu();
+    
     Self {}
   }
-}
-
-impl Drop for Graphics {
-  fn drop(&mut self) {
-    terminate_graphics();
-  }
-}
-
-fn initialize_graphics() {
-  let (draw_buff, disp_buff, depth_buff) = create_graphics_buffers();
-
-  unsafe {
+  
+  fn setup_gu() {
+    let (draw_buff, disp_buff, depth_buff) = create_graphics_buffers();
     start_gu();
     start_display_context(draw_buff, disp_buff, depth_buff);
+  }
+  
+  fn set_bounds() {
     set_viewport();
     set_depth_range();
+  }
+
+  fn enable_features() {
     enable_scissors();
     enable_depth_test();
     enable_cull_face();
     enable_smooth_shading();
     enable_textures();
-    send_to_gu();
+  }
+
+  fn send_to_gu() {
+    execute_display_list();
     enable_display();
   }
 }
 
-fn terminate_graphics() {
-  unsafe { sys::sceGuTerm() }
+impl Drop for Graphics {
+  fn drop(&mut self) {
+    unsafe { sys::sceGuTerm() };
+  }
 }
 
 pub struct Frame {}
@@ -80,7 +86,7 @@ fn enable_display() {
   }
 }
 
-fn send_to_gu() {
+fn execute_display_list() {
   unsafe {
     sys::sceGuFinish();
     sys::sceGuSync(sys::GuSyncMode::Finish, sys::GuSyncBehavior::Wait); // blocking call
@@ -90,16 +96,16 @@ fn send_to_gu() {
 
 fn create_graphics_buffers() -> (*mut c_void, *mut c_void, *mut c_void) {
   let mut allocator = vram_alloc::get_vram_allocator().unwrap();
-  let bwi32 = BUFFER_WIDTH as u32;
-  let shi32 = SCREEN_HEIGHT as u32;
+  let bwu32 = BUFFER_WIDTH as u32;
+  let shu32 = SCREEN_HEIGHT as u32;
   let draw_buff = allocator
-    .alloc_texture_pixels(bwi32, shi32, sys::TexturePixelFormat::Psm8888)
+    .alloc_texture_pixels(bwu32, shu32, sys::TexturePixelFormat::Psm8888)
     .as_mut_ptr_from_zero() as *mut c_void;
   let disp_buff = allocator
-    .alloc_texture_pixels(bwi32, shi32, sys::TexturePixelFormat::Psm8888)
+    .alloc_texture_pixels(bwu32, shu32, sys::TexturePixelFormat::Psm8888)
     .as_mut_ptr_from_zero() as *mut c_void;
   let depth_buff = allocator
-    .alloc_texture_pixels(bwi32, shi32, sys::TexturePixelFormat::Psm4444)
+    .alloc_texture_pixels(bwu32, shu32, sys::TexturePixelFormat::Psm4444)
     .as_mut_ptr_from_zero() as *mut c_void;
 
   (draw_buff, disp_buff, depth_buff)
