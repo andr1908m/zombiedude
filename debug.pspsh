@@ -1,0 +1,3 @@
+reset
+cd /
+debug $1/game_psp.prx

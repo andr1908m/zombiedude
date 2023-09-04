@@ -4,14 +4,25 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "run",
+      "label": "Run on emulator",
       "type": "shell",
-      "command": "./run.sh",
+      "command": "./ppsspp.sh",
       "problemMatcher": [],
-      "group": {
-        "kind": "test",
-        "isDefault": true,
-      }
+    },
+    {
+      "label": "Run on console",
+      "type": "shell",
+      "command": "./ppsspp.sh",
+      "problemMatcher": [],
+    },
+    {
+      "label": "restart-gbdserver",
+      "type": "shell",
+      "command": "./reset-debugger.sh",
+      "args": [
+        "${workspaceRoot}"
+      ],
+      "problemMatcher": []
     },
     {
       "label": "build",

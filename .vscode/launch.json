@@ -1,0 +1,22 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "PSP-GDB",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/target/mipsel-sony-psp/debug/game_psp",
+      "miDebuggerServerAddress": "localhost:10001",
+      "cwd": "${workspaceRoot}/target/mipsel-sony-psp/debug/",
+      "externalConsole": true,
+      "linux": {
+        "MIMode": "gdb"
+      },
+      "miDebuggerPath": "${env:PSPDEV}/bin/psp-gdb",
+      "preLaunchTask": "restart-gbdserver"
+    }
+  ]
+}
