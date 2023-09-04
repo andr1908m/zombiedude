@@ -1,7 +1,10 @@
 use psp::Align16;
 use psp::sys::*;
-use psp::vram_alloc;
+use psp::sys::DepthFunc;
+use psp::sys::FrontFaceDirection;
+use psp::vram_alloc::*;
 
+use core::cell::RefCell;
 use core::ffi::c_void;
 use crate::c_compat::ToVoid;
 
@@ -11,69 +14,137 @@ const BUFFER_WIDTH: i32 = 512;
 const SCREEN_WIDTH: i32 = 480;
 const SCREEN_HEIGHT: i32 = 272;
 
-static mut DISPLAY_LIST: Align16<[u32; 0x40000]> = Align16([0; 0x40000]);
+const _256_KIBIBYTES: usize = 0x40000;
 
-pub struct Graphics {}
+impl ToVoid for VramMemChunk<'_> {
+  fn as_void_ptr(&self) -> *const c_void {
+    self.as_mut_ptr_from_zero() as *const c_void
+  }
+
+  fn as_mut_void_ptr(&mut self) -> *mut c_void {
+    self.as_mut_ptr_from_zero() as *mut c_void
+  }
+}
+
+pub struct Graphics {
+  list: Align16<[u32; _256_KIBIBYTES]>,
+  draw_buffer:Option<*mut c_void>,
+  disp_buffer:Option<*mut c_void>,
+  depth_buffer:Option<*mut c_void>,
+  allocator:SimpleVramAllocator,
+}
 
 impl Graphics {
   pub fn new() -> Self {
-    Self::setup_graphics_unit();
-    Self::set_bounds();
-    Self::enable_features();
-    Self::send_to_graphics_unit();
+    let mut this = Self {
+      list: Align16([0; _256_KIBIBYTES]),
+      draw_buffer: None,
+      disp_buffer: None,
+      depth_buffer: None,
+      allocator: get_vram_allocator().unwrap()
+    };
+    this.initialize_texture_buffers();
+    this.setup_graphics_engine();
+    this.specify_bounds();
+    this.enable_features();
+    this.send_to_graphics_engine();
     
-    Self {}
-  }
-  
-  fn setup_graphics_unit() {
-    let (draw_buff, disp_buff, depth_buff) = create_graphics_buffers();
-    start_gu();
-    start_display_context(draw_buff, disp_buff, depth_buff);
-  }
-  
-  fn set_bounds() {
-    set_viewport();
-    set_depth_range();
+    this
   }
 
-  fn enable_features() {
-    enable_scissors();
+  fn initialize_texture_buffers(&mut self) {
+    self.draw_buffer = self.create_texture_buffer(TexturePixelFormat::Psm8888);
+    self.disp_buffer = self.create_texture_buffer(TexturePixelFormat::Psm8888);
+    self.depth_buffer = self.create_texture_buffer(TexturePixelFormat::Psm4444);
+  }
+
+  fn create_texture_buffer(&self, format:TexturePixelFormat) -> Option<*mut c_void> {
+    let width = BUFFER_WIDTH as u32;
+    let height = SCREEN_HEIGHT as u32;
+    let ptr = self.allocator
+      .alloc_texture_pixels(width, height, format)
+      .as_mut_void_ptr();
+    Some(ptr)
+  }
+  
+  fn setup_graphics_engine(&mut self) {
+    start_gu();
+    self.start_display_context();
+  }
+
+  fn start_display_context(&mut self) {
+    self.start_display_list();
+    self.specify_graphics_buffers();
+  }
+
+  fn start_display_list(&mut self) {
+    unsafe { 
+      sys::sceGuStart(GuContextType::Direct, self.list.as_mut_void_ptr()) 
+    };
+  }
+
+  fn specify_graphics_buffers(&self) {
+    self.specify_draw_buffer();
+    self.specify_disp_buffer();
+    self.specify_depth_buffer();
+  }
+
+  fn specify_draw_buffer(&self) {
+    unsafe {
+      sys::sceGuDrawBuffer(
+        DisplayPixelFormat::Psm4444, 
+        self.draw_buffer.unwrap(), 
+        BUFFER_WIDTH
+      );
+    }
+  }
+
+  fn specify_disp_buffer(&self) {
+    unsafe {
+      sys::sceGuDispBuffer(
+        SCREEN_WIDTH, 
+        SCREEN_HEIGHT, 
+        self.disp_buffer.unwrap(), 
+        BUFFER_WIDTH
+      );
+    }
+  }
+
+  fn specify_depth_buffer(&self) {
+    unsafe {
+      sys::sceGuDepthBuffer(
+        self.depth_buffer.unwrap(), 
+        BUFFER_WIDTH
+      );
+    }
+  }
+  
+  fn specify_bounds(&self) {
+    specify_viewport();
+    specify_depth_range();
+  }
+
+  fn enable_features(&self) {
+    enable_viewport_scissors();
     enable_depth_test();
-    enable_cull_face();
+    enable_face_culling();
     enable_smooth_shading();
     enable_textures();
   }
 
-  fn send_to_graphics_unit() {
+  fn send_to_graphics_engine(&self) {
     execute_display_list();
     enable_display();
   }
 }
 
+
 impl Drop for Graphics {
   fn drop(&mut self) {
-    unsafe { sys::sceGuTerm() };
-  }
-}
-pub struct Frame {}
-
-impl Frame {
-  pub fn new() -> Self {
-    unsafe {
-      sys::sceGuStart(GuContextType::Direct, DISPLAY_LIST.as_mut_void_ptr());
-    }
-    Self {}
-  }
-}
-
-impl Drop for Frame {
-  fn drop(&mut self) {
-    unsafe {
-      sys::sceGuFinish();
-      sys::sceGuSync(GuSyncMode::Finish, GuSyncBehavior::Wait);
-      sys::sceDisplayWaitVblankStart();
-      sys::sceGuSwapBuffers();
-    }
+    unsafe { 
+      sys::sceGuTerm();
+      self.allocator.free_all(); 
+    };
   }
 }
 
@@ -91,37 +162,15 @@ fn execute_display_list() {
   }
 }
 
-fn create_graphics_buffers() -> (*mut c_void, *mut c_void, *mut c_void) {
-  let mut allocator = vram_alloc::get_vram_allocator().unwrap();
-  let bwu32 = BUFFER_WIDTH as u32;
-  let shu32 = SCREEN_HEIGHT as u32;
-  let draw_buff = allocator
-    .alloc_texture_pixels(bwu32, shu32, TexturePixelFormat::Psm8888)
-    .as_mut_ptr_from_zero() as *mut c_void;
-  let disp_buff = allocator
-    .alloc_texture_pixels(bwu32, shu32, TexturePixelFormat::Psm8888)
-    .as_mut_ptr_from_zero() as *mut c_void;
-  let depth_buff = allocator
-    .alloc_texture_pixels(bwu32, shu32, TexturePixelFormat::Psm4444)
-    .as_mut_ptr_from_zero() as *mut c_void;
-
-  (draw_buff, disp_buff, depth_buff)
-}
-
 fn start_gu() {
-  unsafe { sys::sceGuInit() }
-}
-
-fn start_display_context(draw_buff: *mut c_void, disp_buff: *mut c_void, depth_buff: *mut c_void) {
-  unsafe {
-    sys::sceGuStart(GuContextType::Direct, DISPLAY_LIST.as_mut_void_ptr());
-    sys::sceGuDrawBuffer(DisplayPixelFormat::Psm4444, draw_buff, BUFFER_WIDTH);
-    sys::sceGuDispBuffer(SCREEN_WIDTH, SCREEN_HEIGHT, disp_buff, BUFFER_WIDTH);
-    sys::sceGuDepthBuffer(depth_buff, BUFFER_WIDTH);
+  unsafe { 
+    sys::sceGuInit();
+    sys::sceGumLoadIdentity();
   }
 }
 
-fn set_viewport() {
+
+fn specify_viewport() {
   let x = 2048 - ((SCREEN_WIDTH / 2) as u32);
   let y = 2048 - ((SCREEN_HEIGHT / 2) as u32);
   unsafe {
@@ -130,13 +179,14 @@ fn set_viewport() {
   }
 }
 
-fn set_depth_range() {
+fn specify_depth_range() {
   unsafe {
     sys::sceGuDepthRange(65535, 0);
   }
 }
 
-fn enable_scissors() {
+/// enable cutting away things outside the viewport
+fn enable_viewport_scissors() {
   unsafe {
     sys::sceGuEnable(GuState::ScissorTest);
     sys::sceGuScissor(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
@@ -147,14 +197,14 @@ fn enable_scissors() {
 fn enable_depth_test() {
   unsafe {
     sys::sceGuEnable(GuState::DepthTest);
-    sys::sceGuDepthFunc(sys::DepthFunc::GreaterOrEqual);
+    sys::sceGuDepthFunc(DepthFunc::GreaterOrEqual);
   }
 }
 
-fn enable_cull_face() {
+fn enable_face_culling() {
   unsafe {
     sys::sceGuEnable(GuState::CullFace);
-    sys::sceGuFrontFace(sys::FrontFaceDirection::Clockwise);
+    sys::sceGuFrontFace(FrontFaceDirection::Clockwise);
   }
 }
 
@@ -170,3 +220,60 @@ fn enable_smooth_shading() {
     sys::sceGuShadeModel(ShadingModel::Smooth);
   }
 }
+
+
+pub struct Frame {}
+
+impl Frame {
+  pub fn iter(graphics: Graphics) -> Frames {
+    Frames { graphics }
+  }
+
+  fn new(graphics: &mut Graphics) -> Self {
+    unsafe {
+      graphics.start_display_list();
+      sys::sceGuDisable(GuState::DepthTest);
+    }
+    Self {}
+  }
+}
+
+impl Drop for Frame {
+  fn drop(&mut self) {
+    unsafe {
+      sys::sceGuFinish();
+      sys::sceGuSync(GuSyncMode::Finish, GuSyncBehavior::Wait);
+      sys::sceDisplayWaitVblankStart();
+      sys::sceGuSwapBuffers();
+    }
+  }
+}
+
+pub struct Frames {
+  graphics: Graphics
+}
+
+impl Frames {
+  pub fn iterator(graphics: Graphics) -> Frames {
+    Frames {
+      graphics
+    }
+  }
+}
+
+impl Iterator for Frames {
+  type Item = Frame;
+
+  fn next(&mut self) -> Option<Self::Item> {
+    Some(Frame::new(&mut self.graphics))
+  }
+}
+
+/*
+  fn frames(graphics:Graphics) {
+    loop {
+      yield Frame::new(graphics)
+    }
+  }
+
+*/
