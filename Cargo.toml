@@ -4,5 +4,6 @@ resolver = "2"
 members = [
   "game_psp",
   "game",
+  "png_psp"
 ]
 
