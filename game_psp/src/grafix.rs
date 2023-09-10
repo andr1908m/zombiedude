@@ -1,11 +1,9 @@
 use psp::Align16;
 use psp::sys::*;
-use psp::sys::DepthFunc;
-use psp::sys::FrontFaceDirection;
 use psp::vram_alloc::*;
 
-use core::cell::RefCell;
 use core::ffi::c_void;
+use core::marker::PhantomData;
 use crate::c_compat::ToVoid;
 
 use psp::sys;
@@ -35,14 +33,24 @@ pub struct Graphics {
 }
 
 impl Graphics {
+  pub fn for_each_frame(&mut self, cb: fn()) {
+    loop {
+      self.start_display_list();
+      unsafe {
+        sys::sceGuDisable(GuState::DepthTest);
+      }
+      cb();
+      unsafe {
+        sys::sceGuFinish();
+        sys::sceGuSync(GuSyncMode::Finish, GuSyncBehavior::Wait);
+        sys::sceDisplayWaitVblankStart();
+        sys::sceGuSwapBuffers();
+      }
+    }
+  }
+
   pub fn new() -> Self {
-    let mut this = Self {
-      list: Align16([0; _256_KIBIBYTES]),
-      draw_buffer: None,
-      disp_buffer: None,
-      depth_buffer: None,
-      allocator: get_vram_allocator().unwrap()
-    };
+    let mut this = Self::create_defaults();
     this.initialize_texture_buffers();
     this.setup_graphics_engine();
     this.specify_bounds();
@@ -50,6 +58,16 @@ impl Graphics {
     this.send_to_graphics_engine();
     
     this
+  }
+
+  fn create_defaults() -> Graphics {
+    Self {
+      list: Align16([0; _256_KIBIBYTES]),
+      draw_buffer: None,
+      disp_buffer: None,
+      depth_buffer: None,
+      allocator: get_vram_allocator().unwrap(),
+    }
   }
 
   fn initialize_texture_buffers(&mut self) {
@@ -68,7 +86,7 @@ impl Graphics {
   }
   
   fn setup_graphics_engine(&mut self) {
-    start_gu();
+    start_graphics_system();
     self.start_display_context();
   }
 
@@ -138,7 +156,6 @@ impl Graphics {
   }
 }
 
-
 impl Drop for Graphics {
   fn drop(&mut self) {
     unsafe { 
@@ -162,13 +179,11 @@ fn execute_display_list() {
   }
 }
 
-fn start_gu() {
+fn start_graphics_system() {
   unsafe { 
     sys::sceGuInit();
-    sys::sceGumLoadIdentity();
   }
 }
-
 
 fn specify_viewport() {
   let x = 2048 - ((SCREEN_WIDTH / 2) as u32);
@@ -220,60 +235,3 @@ fn enable_smooth_shading() {
     sys::sceGuShadeModel(ShadingModel::Smooth);
   }
 }
-
-
-pub struct Frame {}
-
-impl Frame {
-  pub fn iter(graphics: Graphics) -> Frames {
-    Frames { graphics }
-  }
-
-  fn new(graphics: &mut Graphics) -> Self {
-    unsafe {
-      graphics.start_display_list();
-      sys::sceGuDisable(GuState::DepthTest);
-    }
-    Self {}
-  }
-}
-
-impl Drop for Frame {
-  fn drop(&mut self) {
-    unsafe {
-      sys::sceGuFinish();
-      sys::sceGuSync(GuSyncMode::Finish, GuSyncBehavior::Wait);
-      sys::sceDisplayWaitVblankStart();
-      sys::sceGuSwapBuffers();
-    }
-  }
-}
-
-pub struct Frames {
-  graphics: Graphics
-}
-
-impl Frames {
-  pub fn iterator(graphics: Graphics) -> Frames {
-    Frames {
-      graphics
-    }
-  }
-}
-
-impl Iterator for Frames {
-  type Item = Frame;
-
-  fn next(&mut self) -> Option<Self::Item> {
-    Some(Frame::new(&mut self.graphics))
-  }
-}
-
-/*
-  fn frames(graphics:Graphics) {
-    loop {
-      yield Frame::new(graphics)
-    }
-  }
-
-*/
