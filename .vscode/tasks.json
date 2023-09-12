@@ -33,6 +33,16 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "test",
+      "type": "shell",
+      "command": "cargo test --package nid_generator",
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
     }
   ]
 }

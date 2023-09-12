@@ -1,6 +1,12 @@
+
+use core::ffi::c_void;
+
 #[macro_export]
 macro_rules! psp_export {
-  ($name:expr, $version:expr, $($lib:ident),*) => {
+  ($name:expr,$version:expr, $(($nid:expr, $lib:ident)),*) => {
+    const NAME:&'static str = $name;
+    const LIB_COUNT:u16 = [$($nid),*].len() as u16;
+
     extern "C" {
       static _gp: u8;
       static __lib_ent_bottom: u8;
@@ -14,52 +20,44 @@ macro_rules! psp_export {
     #[used]
     static MODULE_INFO: psp::Align16<psp::sys::SceModuleInfo> =
       psp::Align16(psp::sys::SceModuleInfo {
-          mod_attribute: 0,
-          mod_version: [$version.0, $version.1],
-          mod_name: psp::sys::SceModuleInfo::name($name),
-          terminal: 0,
-          gp_value: unsafe { &_gp },
-          stub_top: unsafe { &__lib_stub_top },
-          stub_end: unsafe { &__lib_stub_bottom },
-          ent_top: unsafe { &__lib_ent_top },
-          ent_end: unsafe { &__lib_ent_bottom },
+        mod_attribute: 0,
+        mod_version: [$version.0, $version.1],
+        mod_name: psp::sys::SceModuleInfo::name(NAME),
+        terminal: 0,
+        gp_value: unsafe { &_gp },
+        stub_top: unsafe { &__lib_stub_top },
+        stub_end: unsafe { &__lib_stub_bottom },
+        ent_top: unsafe { &__lib_ent_top },
+        ent_end: unsafe { &__lib_ent_bottom },
       });
 
     use core::ffi::c_void;
 
     #[no_mangle]
-    extern "C" fn module_start(_argc_bytes: usize, _argv: *mut c_void) -> isize {
+    extern "C" fn module_start(_argc: usize, _argv: *mut c_void) -> isize {
       0
     }
 
     #[no_mangle]
     #[link_section = ".rodata.sceResident"]
     #[used]
-    static SYSLIB_EXPORTS: psp::sys::SceLibraryEntryTable = psp::sys::SceLibraryEntryTable {
-      module_start_nid: 0xd632acdb, // module_start
-      module_info_nid: 0xf01d73a7,  // SceModuleInfo
-      module_start: module_start,
-      module_info: &MODULE_INFO.0,
-    };
+    static SYSLIB_EXPORTS: psp::sys::SceLibraryEntryTable = 
+      psp::sys::SceLibraryEntryTable {
+        module_start_nid: 0xd632acdb, // module_start
+        module_info_nid: 0xf01d73a7,  // SceModuleInfo
+        module_start: module_start,
+        module_info: &MODULE_INFO.0,
+      };
+      use core::marker::Sync;
 
-    #[repr(C, packed)]
-    struct Export {
-      pub nid: u32,
-      pub function: *const c_void,
-    }
-
-    unsafe impl Sync for Export {}
+      struct Export(*const ());
+      unsafe impl Sync for Export {}
 
     #[no_mangle]
     #[link_section = ".rodata.sceResident"]
-    #[used]
-    static MYLIB_EXPORTS: [Export; ${count(lib)}] = [
-      $(
-        Export {
-          nid: 0xd632acdb,
-          function: &$lib as *const _ as *const c_void
-        }
-      )*
+    static MYLIB_EXPORTS: [Export; LIB_COUNT as usize * 2] = [
+      $(Export($nid as *const ()),)*
+      $(Export($lib as *const ()),)*
     ];
 
     #[repr(C, packed)]
@@ -96,20 +94,31 @@ macro_rules! psp_export {
         attribute: psp::sys::SceLibAttr::SCE_LIB_AUTO_EXPORT,
         entry_len: 4,
         var_count: 0,
-        func_count: ${count(lib)},
+        func_count: LIB_COUNT,
         entry_table: &MYLIB_EXPORTS as *const _ as *const c_void,
       }
     ];
   };
 }
-
-
-
-fn library_call() {
-  
+pub struct Args {
+  count: usize,
+  values: *mut u8
 }
 
-psp_export!("test", (0,1), 
-  library_call);
-
-
+impl Args {
+  fn new(argc: usize, argv: *mut c_void) -> Args {
+    Self {
+      count:argc,
+      values:argv as *mut u8
+    }
+  }
+  pub fn at(&self, i: usize) -> Option<u8> {
+    if i > self.count {
+      None
+    } else {
+      unsafe {
+        Some(*self.values.add(i))
+      }
+    } 
+  }
+}

@@ -2,8 +2,12 @@
 resolver = "2"
 
 members = [
-  "game_psp",
-  "game",
-  "png_psp"
+  # "game_psp",
+  # "game",
+  # "png_psp",
+  "os_psp",
+  "test_create",
+  "test_load",
+  "nid_generator"
 ]
 

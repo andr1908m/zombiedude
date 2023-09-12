@@ -3,7 +3,6 @@ use psp::sys::*;
 use psp::vram_alloc::*;
 
 use core::ffi::c_void;
-use core::marker::PhantomData;
 use crate::c_compat::ToVoid;
 
 use psp::sys;
