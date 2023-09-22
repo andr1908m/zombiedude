@@ -20,12 +20,13 @@
       "type": "shell",
       "command": "./reset-debugger.sh",
       "args": [
-        "${workspaceRoot}"
+        "${workspaceRoot}",
+        "test_load.prx"
       ],
       "problemMatcher": []
     },
     {
-      "label": "build",
+      "label": "build all",
       "type": "shell",
       "command": "cargo psp",
       "problemMatcher": [],
@@ -33,6 +34,48 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "build os_psp",
+      "type": "shell",
+      "command": "cargo psp --package os_psp",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+      }
+    },
+    {
+      "label": "build png_psp",
+      "type": "shell",
+      "command": "cargo psp --package png_psp",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+      }
+    },
+    {
+      "label": "build test_create",
+      "type": "shell",
+      "command": "cargo psp --package test_create",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+      }
+    },
+    {
+      "label": "build test_load",
+      "type": "shell",
+      "command": "cargo psp --package test_load",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+      }
+    },
+    {
+      "label": "run test_load on psp",
+      "type": "shell",
+      "command": "pspsh -e target/mipsel-sony-psp/debug/test_load.prx",
+      "problemMatcher":[]
     },
     {
       "label": "test",

@@ -12,8 +12,10 @@ fn library_call_2(_b:i32) {
 }
 
 psp_export! {
-  "test_create",
-  (0,1), 
-  (0x0845f1cf, library_call), 
-  (0x28fa2125, library_call_2)
+  #![module_name = "test_create"]
+  #![version = (0,1)]
+  
+  #![lib_name = "MyLib"]
+  0x0845f1cf => library_call;
+  0x28fa2125 => library_call_2;
 }

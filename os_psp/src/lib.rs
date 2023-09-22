@@ -3,3 +3,4 @@
 
 pub mod c_runtime;
 pub mod psp_module;
+pub mod macros;

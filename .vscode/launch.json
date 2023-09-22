@@ -8,7 +8,7 @@
       "name": "PSP-GDB",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceRoot}/target/mipsel-sony-psp/debug/game_psp",
+      "program": "${workspaceRoot}/target/mipsel-sony-psp/debug/test_load",
       "miDebuggerServerAddress": "localhost:10001",
       "cwd": "${workspaceRoot}/target/mipsel-sony-psp/debug/",
       "externalConsole": true,
@@ -16,7 +16,7 @@
         "MIMode": "gdb"
       },
       "miDebuggerPath": "${env:PSPDEV}/bin/psp-gdb",
-      "preLaunchTask": "restart-gbdserver"
+      // "preLaunchTask": "restart-gbdserver"
     }
   ]
 }

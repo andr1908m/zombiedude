@@ -1,3 +1,5 @@
+pub use paste::paste;
+
 use psp::sys::SceStubLibraryEntry;
 
 
@@ -32,12 +34,12 @@ macro_rules! link_section_concat {
 /// Compiling with LTO then only links the functions that are called, and no
 /// more.
 #[derive(Copy, Clone)]
-pub(crate) struct Stub {
+pub struct Stub {
     // These are never read, but need to be written into as static items.
     #[allow(dead_code)]
-    pub(crate) lib_addr: &'static SceStubLibraryEntry,
+    pub lib_addr: &'static SceStubLibraryEntry,
     #[allow(dead_code)]
-    pub(crate) nid_addr: &'static u32,
+    pub nid_addr: &'static u32,
 }
 
 /// Calculate the padded length for a library name.
@@ -111,8 +113,12 @@ macro_rules! psp_extern {
             $(-> $ret:ty)?;
         )*
     ) => {
-        use paste::paste;
+        use os_psp::macros::paste;
+        use os_psp::link_section_concat;
         use psp::sys::SceStubLibraryEntry;
+        use os_psp::macros::lib_name_bytes_len;
+        use os_psp::macros::lib_name_bytes;
+        
         paste! {
             #[allow(non_snake_case)]
             mod [< __ $lib_name _mod >] {
@@ -123,7 +129,7 @@ macro_rules! psp_extern {
                 link_section_concat! {
                     #[link_section = concat!(".rodata.sceResident.", $lib_name)]
                     #[allow(non_upper_case_globals)]
-                    static [< __ $lib_name _RESIDENT >] : [u8; $crate::macros::lib_name_bytes_len($lib_name)] = $crate::macros::lib_name_bytes($lib_name);
+                    static [< __ $lib_name _RESIDENT >] : [u8; lib_name_bytes_len($lib_name)] = lib_name_bytes($lib_name);
 
                     #[link_section = concat!(".rodata.sceNid.", $lib_name)]
                     #[allow(non_upper_case_globals)]
@@ -177,7 +183,7 @@ macro_rules! psp_extern {
                         )]
                         #[no_mangle]
                         #[allow(non_upper_case_globals)]
-                        static [< __ $name _stub >]: $crate::macros::Stub = $crate::macros::Stub {
+                        static [< __ $name _stub >]: os_psp::macros::Stub = os_psp::macros::Stub {
                             lib_addr: &[< __ $lib_name _STUB >],
                             nid_addr: &[< __ $name _NID >],
                         };

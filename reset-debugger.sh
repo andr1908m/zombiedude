@@ -1,7 +1,8 @@
 #!/bin/sh
 workspaceRoot="$1"
+prx_file="$2"
 
-path=$(echo "$workspaceRoot/target/mipsel-sony-psp/debug" | cut -d '/' -f4-)
+path="target/mipsel-sony-psp/debug"
 
-pspsh debug.pspsh "$path"
+pspsh debug.pspsh "$path" "$prx_file"
       

@@ -1,29 +1,13 @@
 #![no_main]
 #![no_std]
 
-mod macros;
-
-
-use core::{mem::size_of, fmt::Display, hash::Hasher, ptr::{null_mut, null}};
-use psp::sys::{SceUid, SceKernelLMOption, sceKernelLoadModule, sceKernelLoadModuleMs, sceKernelStartModule};
+use test_create::library_call;
+use test_create::library_call_2;
 
 psp::module!("Test load", 0, 1);
 
-
-psp_extern! {
-  #![name = "test_create"]
-  #![flags = 0x0]
-  #![version = (0x00, 0x01)]
-
-  #[psp(0x0845f1cf)]
-  pub fn library_call();
-
-  #[psp(0x28fa2125)]
-  pub fn library_call_2(b:i32);
-}
-
 fn psp_main() {
-  load_module("ms0:/test_create.prx");
+  psp::dprintln!("module successfully loaded!");
   unsafe {
     library_call();
     library_call_2(2);
@@ -236,53 +220,8 @@ const KERNEL_ERROR_CODES: [(u32, &'static str); 198] = [
   (0x80010002, "UNKNOWN")
 ];
 
-
-fn load_module(path: &str) {
-  let load_in_user_partition = SceUid(2);
-  let mut option = SceKernelLMOption {
-    size: size_of::<SceKernelLMOption>(),
-    m_pid_text: load_in_user_partition,
-    m_pid_data: load_in_user_partition,
-    flags: 0,
-    position: 0,
-    access: 1,
-    c_reserved: [0,0],
-  };
-  unsafe {
-    let uid = sceKernelLoadModule([path,"\0"].concat().as_ptr(), 0, &mut option as *mut _);
-    assert_not_error(uid.0);
-    // let i32 = sceKernelStartModule(uid, 0, null_mut(), null_mut(), null_mut());
-    // assert_not_error(i32);
-
-    psp::dprintln!("loaded library with uid: {:?}", uid)
-  }
-}
-
 fn assert_not_error(uid: i32) {
-  let error = KERNEL_ERROR_CODES.iter().find(|e| e.0 as i32 == (uid));
+  let error = KERNEL_ERROR_CODES.iter().find(|e| 
+    e.0 != 0 && (e.0 as i32 == (uid)));
   assert!(error.is_none(), "error is {:?}", error);
 }
-
-
-// // SceUID load_module(const char *path, int flags, int type)
-// // {
-// // 	SceKernelLMOption option;
-// // 	SceUID mpid;
-
-// // 	/* If the type is 0, then load the module in the kernel partition, otherwise load it
-// // 	   in the user partition. */
-// // 	if (type == 0) {
-// // 		mpid = 1;
-// // 	} else {
-// // 		mpid = 2;
-// // 	}
-
-// // 	memset(&option, 0, sizeof(option));
-// // 	option.size = sizeof(option);
-// // 	option.mpidtext = mpid;
-// // 	option.mpiddata = mpid;
-// // 	option.position = 0;
-// // 	option.access = 1;
-
-// // 	return sceKernelLoadModule(path, flags, type > 0 ? &option : NULL);
-// // }

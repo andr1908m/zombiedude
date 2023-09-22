@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "malloc.h": "c",
+    "pspkernel.h": "c",
+    "psptypes.h": "c",
+    "pspsdk.h": "c",
+    "random": "c",
+    "pspuser.h": "c"
+  }
+}

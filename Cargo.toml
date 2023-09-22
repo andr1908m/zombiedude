@@ -8,6 +8,7 @@ members = [
   "os_psp",
   "test_create",
   "test_load",
-  "nid_generator"
+  "nid_generator",
+  "rust-and-c"
 ]
 
