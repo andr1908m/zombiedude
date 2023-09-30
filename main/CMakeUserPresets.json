@@ -1,0 +1,9 @@
+{
+    "version": 4,
+    "vendor": {
+        "conan": {}
+    },
+    "include": [
+        "/home/andres/projects/learning-rust/zombiedude/main/build/CMakePresets.json"
+    ]
+}

@@ -1,0 +1,9 @@
+/usb
+/.pspsdk
+/.vscode
+/**/build/
+/.cache
+/**/.cache
+/cmake-build-Debug
+/cmake-build-Release
+/.metadata/
