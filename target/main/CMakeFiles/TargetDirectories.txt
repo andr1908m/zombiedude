@@ -1,4 +1,0 @@
-/home/andres/projects/learning-rust/zombiedude/target/main/CMakeFiles/main.dir
-/home/andres/projects/learning-rust/zombiedude/target/main/CMakeFiles/copy_assets.dir
-/home/andres/projects/learning-rust/zombiedude/target/main/CMakeFiles/edit_cache.dir
-/home/andres/projects/learning-rust/zombiedude/target/main/CMakeFiles/rebuild_cache.dir
