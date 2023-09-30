@@ -1,5 +1,9 @@
-/target
-/rust-psp
-/hello_psp/target
-/pspsdk
 /usb
+/.pspsdk
+/.vscode
+/**/build/
+/.cache
+/**/.cache
+/cmake-build-Debug
+/cmake-build-Release
+/.metadata/

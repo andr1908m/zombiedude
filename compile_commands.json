@@ -1,0 +1,357 @@
+[{
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/win32/SDL_windows_main.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/win32/SDL_windows_main.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/win32/SDL_windows_main.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/vorbseek/vorbseek.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/vorbseek/vorbseek.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/vorbseek/vorbseek.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/cave_mesher.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/cave_mesher.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/cave_mesher.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/cave_main.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/cave_main.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/cave_main.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/caveview.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/caveview.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/caveview.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/stb_gl.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/stb_gl.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/stb_gl.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/oversample/main.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/oversample/main.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/oversample/main.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/oversample/stb_wingraph.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/oversample/stb_wingraph.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/oversample/stb_wingraph.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/pg_test/pg_test.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/pg_test/pg_test.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/pg_test/pg_test.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/glext_list.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/glext_list.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/glext_list.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_image.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_image.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_image.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/textedit_sample.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/textedit_sample.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/textedit_sample.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/grid_reachability.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/grid_reachability.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/grid_reachability.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/image_write_test.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/image_write_test.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/image_write_test.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_dxt.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_dxt.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_dxt.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_cpp_compilation.cpp",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_cpp_compilation.cpp -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_cpp_compilation.cpp.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/c_lexer_test.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/c_lexer_test.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/c_lexer_test.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_image_write.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_image_write.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_image_write.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_leakcheck.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_leakcheck.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_leakcheck.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stb_cpp.cpp",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stb_cpp.cpp -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stb_cpp.cpp.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/prerelease/stb_lib.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/prerelease/stb_lib.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/prerelease/stb_lib.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/herringbone_generator.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/herringbone_generator.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/herringbone_generator.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_herringbone_wang_tile.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_herringbone_wang_tile.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_herringbone_wang_tile.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tools/make_readme.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tools/make_readme.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tools/make_readme.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/sdf/sdf_test.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/sdf/sdf_test.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/sdf/sdf_test.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_tilemap_editor.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_tilemap_editor.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_tilemap_editor.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_image.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_image.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_image.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_hexwave.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_hexwave.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_hexwave.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_rect_pack.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_rect_pack.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_rect_pack.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_easy_font.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_easy_font.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_easy_font.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_connected_components.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_connected_components.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_connected_components.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_sprintf.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_sprintf.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_sprintf.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stb_c_lexer_fuzzer.cpp",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stb_c_lexer_fuzzer.cpp -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stb_c_lexer_fuzzer.cpp.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/types.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/types.h -o /home/andres/projects/learning-rust/zombiedude/main/include/types.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/cave_parse.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/cave_parse.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/cave_parse.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_voxel_render.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_voxel_render.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_voxel_render.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_ds.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_ds.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_ds.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/stb_glprog.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/stb_glprog.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/stb_glprog.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_dxt.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_dxt.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_dxt.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/home_button.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/home_button.h -o /home/andres/projects/learning-rust/zombiedude/main/include/home_button.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_c_lexer.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_c_lexer.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_c_lexer.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_sprintf.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_sprintf.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_sprintf.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tools/build_matrix.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tools/build_matrix.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tools/build_matrix.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/deprecated/stb.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/deprecated/stb.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/deprecated/stb.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/src/main.cpp",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/src/main.cpp -o /home/andres/projects/learning-rust/zombiedude/main/src/main.cpp.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/herringbone_map.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/herringbone_map.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/herringbone_map.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_vorbis.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_vorbis.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_vorbis.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_divide.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_divide.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_divide.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_vorbis.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_vorbis.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_vorbis.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_image_resize.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_image_resize.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_image_resize.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_ds.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_ds.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_ds.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/fuzz_main.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/fuzz_main.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/fuzz_main.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stb_static.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stb_static.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stb_static.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/src/main.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/src/main.h -o /home/andres/projects/learning-rust/zombiedude/main/src/main.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/cave_parse.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/cave_parse.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/cave_parse.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_truetype.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_truetype.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_truetype.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/common.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/common.h -o /home/andres/projects/learning-rust/zombiedude/main/include/common.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_easyfont.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_easyfont.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_easyfont.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_perlin.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_perlin.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_perlin.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_textedit.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_textedit.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_textedit.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/main.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/main.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/main.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/deprecated/stretch_test.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/deprecated/stretch_test.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/deprecated/stretch_test.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/deprecated/rrsprintf.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/deprecated/rrsprintf.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/deprecated/rrsprintf.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tools/trailing_whitespace.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tools/trailing_whitespace.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tools/trailing_whitespace.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/deprecated/stb_image.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/deprecated/stb_image.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/deprecated/stb_image.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tools/unicode.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tools/unicode.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tools/unicode.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_image_write.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_image_write.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_image_write.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stblib_test.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stblib_test.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stblib_test.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_ds_cpp.cpp",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_ds_cpp.cpp -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_ds_cpp.cpp.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_voxel.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_voxel.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_voxel.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/image_test.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/image_test.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/image_test.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_c_compilation.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_c_compilation.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_c_compilation.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/tilemap_editor_integration_example.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/tilemap_editor_integration_example.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/tilemap_editor_integration_example.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tools/easy_font_maker.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tools/easy_font_maker.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tools/easy_font_maker.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_perlin.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_perlin.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_perlin.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/glext.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/glext.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/glext.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_truetype.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_truetype.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_truetype.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/cave_render.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/cave_render.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/caveview/cave_render.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_include.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_include.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/stb_include.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/resample_test.cpp",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/resample_test.cpp -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/resample_test.cpp.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_c_lexer.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_c_lexer.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_c_lexer.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stblib_test_companion.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stblib_test_companion.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stblib_test_companion.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/src/home_button.cpp",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/src/home_button.cpp -o /home/andres/projects/learning-rust/zombiedude/main/src/home_button.cpp.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/deprecated/stretchy_buffer.h",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-g++ -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/deprecated/stretchy_buffer.h -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/deprecated/stretchy_buffer.h.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I.  -g -Wall"
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/truetype_test_win32.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/truetype_test_win32.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/truetype_test_win32.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stbi_read_fuzzer.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stbi_read_fuzzer.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stbi_read_fuzzer.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stb.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stb.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/stb.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/resample_test_c.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/resample_test_c.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/resample_test_c.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }, {
+  "file": "/home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_siphash.c",
+  "directory": "/home/andres/projects/learning-rust/zombiedude/main",
+  "command": "/mnt/med1/pspdev/bin/psp-gcc -c /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_siphash.c -o /home/andres/projects/learning-rust/zombiedude/main/include/stb/tests/test_siphash.c.o -target psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0 -I/mnt/med1/pspdev/psp/include/c++/11.2.0/psp -I/mnt/med1/pspdev/psp/include/c++/11.2.0/backward -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include -I/mnt/med1/pspdev/lib/gcc/psp/11.2.0/include-fixed -I/mnt/med1/pspdev/psp/include -I/mnt/med1/pspdev/include -I/mnt/med1/pspdev/sdk/include -I. -I."
+ }]
