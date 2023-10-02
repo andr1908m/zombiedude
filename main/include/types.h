@@ -8,6 +8,8 @@
 #define u32 unsigned i32
 #define u64 unsigned i64
 
+#define f32 float
+
 #define uchar unsigned char
 
 

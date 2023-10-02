@@ -16,6 +16,7 @@
 
 #include <vector>
 #include <memory>
+#include <unordered_map>
 
 #include <debug.h>
 #include "home_button.h"
@@ -40,7 +41,7 @@ struct Image {
   virtual ~Image();
 };
 
-struct Texture {
+class Texture {
   public:
     u32 width;
     u32 height;
@@ -54,7 +55,7 @@ struct Texture {
   private:
     u32* createSwizzledPixels(const Image& image);
     std::unique_ptr<u32[]> adjustToPowerWidth(const u32 *src);
-    u32 * swizzle(const u8 *in, u32 width, u32 height);
+    u32 * swizzleInGPU(const u8 *in, u32 width, u32 height);
 };
 
 struct Layout {
